@@ -1,56 +1,55 @@
-# Chatbot React
 
-This is a simple chatbot app implemented in React using Google's Gemini API. The goal of this project was to create a basic chatbot interface in under 30 minutes as part of a challenge.
+# Gemini Bot
 
-## Features
+## Description
 
-- Simple chat interface
-- Integration with Google's Gemini API for natural language processing
-- Minimalistic design
-- Responsive layout
+This project is an AI chatbot that uses the Gemini API from Google. It's designed for educational purposes, providing a practical example of how to implement a chat bot using Gemini API.
+
+The chatbot has the following features:
+
+- **Multi-Conversation**: The chatbot can handle multiple conversations at once. It initializes the chat by calling `startChat()`, and then uses `sendMessage()` to send new user messages. These messages, along with the chatbot's responses, are appended to the chat history.
+
+- **User and Model Roles**: The chatbot uses two roles: 'user' and 'model'. The 'user' role provides the prompts, while the 'model' role provides the responses.
+
+- **Streaming**: The chatbot uses streaming for faster interactions. Instead of waiting for the model to complete the entire generation process, the chatbot can handle partial results for quicker responses.
+
+ ## Screenshots
+
+  ![Screenshot 2023-12-31 at 6 41 27 PM](https://github.com/SaiBarathR/gemini-bot-react/assets/58382813/fe6aa8e8-40bb-468a-bb21-2a8697c195ba)
 
 
-## Technologies Used
+## Dependencies
+
+This project uses the following libraries:
 
 - React
-- Google's Gemini API
+- Vite
+- Tailwind
+- Chakra UI
+- React Markdown
+- @google/generative-ai
 
-## Installation
+## API Key
 
-If you want to run this project locally, follow these steps:
+To run this project, you'll need an API key from Google. You can get one for free at [Google AI](https://ai.google.dev/). The free API key comes with some limitations:
 
-1. Clone this repository.
-2. Navigate to the project directory.
-3. Install dependencies using npm or yarn:
+- Rate Limit: The free API key allows for up to 60 queries per minute.
+- Data Usage: The input/output data is used to improve Google's products.
 
-```bash
-npm install
-```
+## Usage
 
-or
+To use this project:
 
-```bash
-yarn install
-```
-
-4. Start the development server:
-
-```bash
-npm start
-```
-
-or
-
-```bash
-yarn start
-```
-
-5. Open your browser and go to `http://localhost:3000` to see the app running locally.
-
-## Credits
-
-This project was created by [Srikar Veluvali](https://github.com/srikarveluvali) as part of a coding challenge.
+1. Clone the repository.
+2. Install the dependencies.
+3. Insert your API key.
+4. Run the project.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is free to use for educational purposes.
+
+## Links
+
+- [Google AI](https://ai.google.dev/)
+- [Google AI Web QuickStart](https://ai.google.dev/tutorials/web_quickstart)
